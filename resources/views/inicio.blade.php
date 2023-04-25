@@ -48,8 +48,8 @@
 
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Inicio</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">Acerca de mi</a></li>
 						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
 						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
 						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
@@ -74,11 +74,11 @@
    			<div class="col-twelve">
 
 	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Juan Dela Cruz.</h1>
+	   			<h1>Hola, Soy luis Olave.</h1>
 
 	   			<p class="intro-position">
-	   				<span>Front-end Developer</span>
-	   				<span>UI/UX Designer</span> 
+	   				<span>Developer Software</span>
+	   				<span>Web / Movil</span> 
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -106,14 +106,17 @@
    	<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>About</h5>
-   			<h1>Let me introduce myself.</h1>
+   			<h5>Acerca de mi</h5>
+   			<h1>Permíteme presentarme.</h1>
 
    			<div class="intro-info">
 
-   				<img src="{{ asset('asstes/images/profile-pic.jpg') }}" alt="Luis Olave ">
+   				<img src="{{ asset('assets/images/profile-pic.jpg') }}" alt="Luis Olave ">
 
-   				<p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+   				<p class="lead">
+					Soy Luis Olave, un desarrollador con más de 12 años de experiencia. Me enfoco en brindar soluciones creativas y efectivas que ayuden a mejorar la presencia en 
+					línea de mis clientes y alcanzar sus metas comerciales. Si tienes preguntas o te gustaría saber más sobre mi trabajo, no dudes en contactarme.
+				</p>
    			</div>   			
 
    		</div>   		
@@ -123,29 +126,30 @@
 
    		<div class="col-six tab-full">
 
-   			<h3>Profile</h3>
-   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+   			<h3>Perfil</h3>
+   			{{-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> --}}
 
    			<ul class="info-list">
    				<li>
-   					<strong>Fullname:</strong>
-   					<span>Juan Dela Cruz</span>
+   					<strong>Nombre:</strong>
+   					<span>Luis Olave C.</span>
    				</li>
    				<li>
-   					<strong>Birth Date:</strong>
-   					<span>September 28, 1987</span>
+   					<strong>Fecha de Nacimiento</strong>
+   					<span>16 de Enero, 1988</span>
    				</li>
    				<li>
-   					<strong>Job:</strong>
-   					<span>Freelancer, Frontend Developer</span>
+   					<strong>Trabajo:</strong>
+   					<span>Developer Software</span>
    				</li>
    				<li>
    					<strong>Website:</strong>
-   					<span>www.kardswebsite.com</span>
+   					<span>luis.olave.cl</span>
    				</li>
    				<li>
    					<strong>Email:</strong>
-   					<span>me@kardswebsite.com</span>
+   					<span>contacto@luisolave.cl</span>
+   					<span>luis.olave.carvajal@gmail.com</span>
    				</li>
 
    			</ul> <!-- /info-list -->
@@ -154,8 +158,8 @@
 
    		<div class="col-six tab-full">
 
-   			<h3>Skills</h3>
-   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+   			<h3>Habilidades</h3>
+   			{{-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> --}}
 
 				<ul class="skill-bars">
                     @foreach ($skills as $item )
@@ -172,8 +176,8 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+   			<a href="#contact" title="Contactame" class="button stroke smoothscroll">Contactame</a>
+   			<a href="#" title="Descarga CV" class="button button-primary">Descarga CV</a>
    		</div>   		
    	</div>
 
@@ -187,91 +191,20 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Resume</h5>
-   			<h1>More of my credentials.</h1>
+   			<h5>Resumen</h5>
+   			<h1>Un Poco mas de mi Certificados.</h1>
 
    			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
 
+
    	<div class="row resume-timeline">
 
    		<div class="col-twelve resume-header">
 
-   			<h2>Work Experience</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>UI Designer</h3>
-	   					<p>July 2015 - Present</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Awesome Studio</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Front-end Developer</h3>
-	   					<p>July 2014 - June 2015</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Super Cool Agency</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Web Designer</h3>
-	   					<p>May 2013 - June 2014</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Great Designs Studio</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-   	
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Education</h2>
+   			<h2>Experiencia Laboral</h2>
 
    		</div> <!-- /resume-header -->
 
@@ -286,12 +219,12 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Master Degree</h3>
-	   					<p>July 2015 - Present</p>
+	   					<h3>Developer Web</h3>
+	   					<p>Marzo 2021- Actualmente</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>University of Life</h4>
+	   					<h4>Neumachile</h4>
 	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
 	   				</div>
 
@@ -339,6 +272,80 @@
    		
    	</div> <!-- /resume-timeline -->
 		
+
+	   <div class="row resume-timeline">
+
+		<div class="col-twelve resume-header">
+
+			<h2>Experiencia</h2>
+
+		</div> <!-- /resume-header -->
+
+		<div class="col-twelve">
+
+			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>UI Designer</h3>
+						<p>July 2015 - Present</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Awesome Studio</h4>
+						<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Front-end Developer</h3>
+						<p>July 2014 - June 2015</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Super Cool Agency</h4>
+						<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Web Designer</h3>
+						<p>May 2013 - June 2014</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Great Designs Studio</h4>
+						<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+			</div> <!-- /timeline-wrap -->   			
+
+		</div> <!-- /col-twelve -->
+		
+	</div> <!-- /resume-timeline -->
+
+
 	</section> <!-- /features -->
 
 
@@ -873,35 +880,32 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="">
+            {{-- <form name="contactForm" id="contactForm" method="post" action=""> --}}
       			<fieldset>
 
                   <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2" required="">
                   </div>
                   <div class="form-field">
 	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
 	               </div>
                   <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Asunto" value="">
 	               </div>                       
                   <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="Msg" rows="10" cols="50" required=""></textarea>
 	               </div>                      
                  <div class="form-field">
-                     <button class="submitform">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
+                     <button class="submitform">Enviar</button>
+                   
                   </div>
+				  {{-- <div class="form-field"> --}}
+					{{-- <button class="submitform">Enviar</button> --}}
+				
+				 {{-- </div> --}}
 
       			</fieldset>
-      		</form> <!-- Form End -->
+      		{{-- </form>  --}}
 
             <!-- contact-warning -->
             <div id="message-warning">            	
