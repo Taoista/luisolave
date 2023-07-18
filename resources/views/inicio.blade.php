@@ -20,16 +20,18 @@
    <link rel="stylesheet" href="{{ asset('assets/css/base.css') }}">  
    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
    <link rel="stylesheet" href="{{ asset('assets/css/vendor.css') }}">     
-
+		
    <!-- script
    ================================================== -->   
 	<script src="{{ asset('assets/js/modernizr.js') }}"></script>
 	<script src="{{ asset('assets/js/pace.min.js') }}"></script>
-
+	
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="{{ asset('assets/favicon.png') }}">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
+	@livewireStyles
 </head>
 
 <body id="top">
@@ -867,55 +869,19 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
+   			<h5>Contacto</h5>
+   			<h1>Me Contactare pronto</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">
+				¡Hola! Gracias por tu interés. Me encantaría ponerme en contacto contigo. Para ello, te pedimos que completes el siguiente formulario con tus datos:
+			</p>
 
    		</div> 
    	</div> <!-- /section-intro -->
 
    	<div class="row contact-form">
 
-   		<div class="col-twelve">
-
-            <!-- form -->
-            {{-- <form name="contactForm" id="contactForm" method="post" action=""> --}}
-      			<fieldset>
-
-                  <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Asunto" value="">
-	               </div>                       
-                  <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="Msg" rows="10" cols="50" required=""></textarea>
-	               </div>                      
-                 <div class="form-field">
-                     <button class="submitform">Enviar</button>
-                   
-                  </div>
-				  {{-- <div class="form-field"> --}}
-					{{-- <button class="submitform">Enviar</button> --}}
-				
-				 {{-- </div> --}}
-
-      			</fieldset>
-      		{{-- </form>  --}}
-
-            <!-- contact-warning -->
-            <div id="message-warning">            	
-            </div>            
-            <!-- contact-success -->
-      		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div>
-
-         </div> <!-- /col-twelve -->
+   		@livewire("contacto")
    		
    	</div> <!-- /contact-form -->
 
@@ -1009,9 +975,18 @@
 
    <!-- Java Script
    ================================================== --> 
+  
    <script src="{{ asset('assets/js/jquery-2.1.3.min.js') }}"></script>
    <script src="{{ asset('assets/js/plugins.js') }}"></script>
    <script src="{{ asset('assets/js/main.js') }}"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+   {{-- <script>
+	</script> --}}
+   @livewireScripts
+   
+   @yield('content-script')
+   @stack("scripts")
 
 </body>
 
