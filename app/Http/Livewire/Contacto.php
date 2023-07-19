@@ -34,7 +34,7 @@ class Contacto extends Component
 
         // ? generar email
 
-        $correo = new ContactoMailable;
+        $correo = new ContactoMailable($name, $email, $telefono, $msg);
         Mail::to("luis.olave.carvajal@gmail.com")->send($correo);
         
     }

@@ -125,7 +125,7 @@
 <td class="pad" style="vertical-align: middle; color: #4f5aba; font-family: 'Noto Serif', Georgia, serif; font-size: 24px; letter-spacing: 0px; padding-bottom: 10px; padding-top: 10px; text-align: center;">
 <table align="center" cellpadding="0" cellspacing="0" class="alignment" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 <tr>
-<td style="vertical-align: middle; text-align: center; padding-top: 0px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px;"><a href="https://www.example.com" style="text-decoration: none;" target="_self"><img align="center" alt="new year celebration" class="icon" height="128" src="images/celebration-icon.png" style="height: auto; display: block; margin: 0 auto; border: 0;" width="109"/></a></td>
+<td style="vertical-align: middle; text-align: center; padding-top: 0px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px;"><a href="{{ url('./') }}" style="text-decoration: none;" target="_self"><img align="center" alt="new year celebration" class="icon" height="128" src="{{ asset('assets/images/celebration-icon.png') }}" style="height: auto; display: block; margin: 0 auto; border: 0;" width="109"/></a></td>
 </tr>
 </table>
 </td>
@@ -141,14 +141,14 @@
 <table border="0" cellpadding="0" cellspacing="0" class="heading_block block-3" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
 <tr>
 <td class="pad" style="padding-bottom:10px;padding-top:10px;text-align:center;width:100%;">
-<h2 style="margin: 0; color: #201f42; direction: ltr; font-family: 'Noto Serif', Georgia, serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">nombre_nombre</span></h2>
+<h2 style="margin: 0; color: #201f42; direction: ltr; font-family: 'Noto Serif', Georgia, serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">{{ $name }}</span></h2>
 </td>
 </tr>
 </table>
 <table border="0" cellpadding="10" cellspacing="0" class="heading_block block-4" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
 <tr>
 <td class="pad">
-<h1 style="margin: 0; color: #201f42; direction: ltr; font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; letter-spacing: normal; line-height: 150%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">email_email<br/>telefono_telefono<br/></span></h1>
+<h1 style="margin: 0; color: #201f42; direction: ltr; font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; letter-spacing: normal; line-height: 150%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">{{ $email }}<br/>{{ $phone }}<br/></span></h1>
 </td>
 </tr>
 </table>
@@ -156,7 +156,7 @@
 <tr>
 <td class="pad" style="padding-left:10px;padding-right:10px;">
 <div style="color:#201f42;direction:ltr;font-family:Inter, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:180%;text-align:center;mso-line-height-alt:28.8px;">
-<p style="margin: 0;">msg_msg</p>
+<p style="margin: 0;">{{ $msg }}</p>
 </div>
 </td>
 </tr>
@@ -201,12 +201,7 @@
 <tr>
 <td class="alignment" style="vertical-align: middle; text-align: center;"><!--[if vml]><table align="left" cellpadding="0" cellspacing="0" role="presentation" style="display:inline-block;padding-left:0px;padding-right:0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><![endif]-->
 <!--[if !vml]><!-->
-<table cellpadding="0" cellspacing="0" class="icons-inner" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; margin-right: -4px; padding-left: 0px; padding-right: 0px;"><!--<![endif]-->
-<tr>
-<td style="vertical-align: middle; text-align: center; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 6px;"><a href="https://www.designedwithbee.com/" style="text-decoration: none;" target="_blank"><img align="center" alt="Designed with BEE" class="icon" height="32" src="images/bee.png" style="height: auto; display: block; margin: 0 auto; border: 0;" width="34"/></a></td>
-<td style="font-family: Inter, sans-serif; font-size: 15px; color: #9d9d9d; vertical-align: middle; letter-spacing: undefined; text-align: center;"><a href="https://www.designedwithbee.com/" style="color: #9d9d9d; text-decoration: none;" target="_blank">Designed with BEE</a></td>
-</tr>
-</table>
+
 </td>
 </tr>
 </table>

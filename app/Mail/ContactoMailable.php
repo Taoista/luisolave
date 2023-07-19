@@ -14,13 +14,20 @@ class ContactoMailable extends Mailable
     use Queueable, SerializesModels;
 
     public $subject = "Correo de contacto";
+    public $name;
+    public $email;
+    public $phone;
+    public $msg;
 
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($name, $email, $phone, $msg)
     {
-        //
+        $this->name = $name;
+        $this->email = $email;
+        $this->phone = $phone;
+        $this->msg = $msg;
     }
 
     /**
