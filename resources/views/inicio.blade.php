@@ -194,9 +194,9 @@
    		<div class="col-twelve">
 
    			<h5>Resumen</h5>
-   			<h1>Un Poco mas de mi Certificados.</h1>
+   			<h1>Un Poco mas de mi.</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">Con una sólida experiencia en desarrollo de software, he trabajado en proyectos desafiantes, aplicando habilidades en programación y resolución de problemas para entregar soluciones de calidad</p>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -213,60 +213,24 @@
    		<div class="col-twelve">
 
    			<div class="timeline-wrap">
+				@foreach ($trabajos AS $item )
+				<div class="timeline-block">
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
 
-   				<div class="timeline-block">
+					<div class="timeline-header">
+						<h3>{{ $item->cargo }}</h3>
+						<p>{{ $item->fecha }}</p>
+					</div>
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Developer Web</h3>
-	   					<p>Marzo 2021- Actualmente</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Neumachile</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Bachelor Degree</h3>
-	   					<p>July 2014 - June 2015</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>State Design University</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Bachelor Degree</h3>
-	   					<p>May 2013 - June 2014</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Design College</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
+					<div class="timeline-content">
+						<h4>{{ $item->empresa }}</h4>
+						<p>{{ $item->texto }}</p>
+					</div>
+			 	</div> 
+				@endforeach
+	   		
 
    			</div> <!-- /timeline-wrap -->   			
 
@@ -286,9 +250,9 @@
 		<div class="col-twelve">
 
 			<div class="timeline-wrap">
-
+				@foreach ($estudios as $item)
+					
 				<div class="timeline-block">
-
 					<div class="timeline-ico">
 						<i class="fa fa-graduation-cap"></i>
 					</div>
@@ -302,44 +266,9 @@
 						<h4>Awesome Studio</h4>
 						<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
 					</div>
-
 				</div> <!-- /timeline-block -->
 
-				<div class="timeline-block">
-
-					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
-
-					<div class="timeline-header">
-						<h3>Front-end Developer</h3>
-						<p>July 2014 - June 2015</p>
-					</div>
-
-					<div class="timeline-content">
-						<h4>Super Cool Agency</h4>
-						<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-					</div>
-
-				</div> <!-- /timeline-block -->
-
-				<div class="timeline-block">
-
-					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
-
-					<div class="timeline-header">
-						<h3>Web Designer</h3>
-						<p>May 2013 - June 2014</p>
-					</div>
-
-					<div class="timeline-content">
-						<h4>Great Designs Studio</h4>
-						<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-					</div>
-
-				</div> <!-- /timeline-block -->
+				@endforeach
 
 			</div> <!-- /timeline-wrap -->   			
 

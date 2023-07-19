@@ -36,7 +36,10 @@ class Contacto extends Component
 
         $correo = new ContactoMailable($name, $email, $telefono, $msg);
         Mail::to("luis.olave.carvajal@gmail.com")->send($correo);
-        
+        $this->reset(["name", "email", "telefono", "msg"]);
+        $this->dispatchBrowserEvent("ok_send");
     }
+
+
 
 }
