@@ -83,7 +83,7 @@
 	   				<span>Web / Movil</span> 
 	   			</p>
 
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+	   			<a class="button stroke smoothscroll" href="#about" title="">Mas de mi</a>
 
 	   		</div>  
    			
@@ -91,11 +91,11 @@
    	</div> <!-- /intro-content --> 
 
    	<ul class="intro-social">        
-         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="#"><i class="fa fa-behance"></i></a></li>
-         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.facebook.com/taoista.olave.1"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://www.instagram.com/alberto_olave73/"><i class="fa fa-instagram"></i></a></li>
+         {{-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> --}}
+         <li><a href="#"><img style="width:24px" src="{{ asset('assets/images/threads-wgiute.svg') }}" alt=""></a></li>
+         {{-- <li><a href="#"><i class="fa fa-youtube"></i></a></li> --}}
       </ul> <!-- /intro-social -->      	
 
    </section> <!-- /intro -->
