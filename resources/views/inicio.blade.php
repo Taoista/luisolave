@@ -76,10 +76,10 @@
    			<div class="col-twelve">
 
 	   			<h5>Hello, World.</h5>
-	   			<h1>Hola, Soy luis Olave.</h1>
+	   			<h1>Hola, Soy Alberto Olave.</h1>
 
 	   			<p class="intro-position">
-	   				<span>Developer Software</span>
+	   				<span>Software Developer</span>
 	   				<span>Web / Movil</span> 
 	   			</p>
 
@@ -258,13 +258,13 @@
 					</div>
 
 					<div class="timeline-header">
-						<h3>UI Designer</h3>
-						<p>July 2015 - Present</p>
+						<h3> {{ $item->titulo }} </h3>
+						<p> {{ $item->fecha }} </p>
 					</div>
 
 					<div class="timeline-content">
-						<h4>Awesome Studio</h4>
-						<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+						<h4> {{ $item->institucion }} </h4>
+						<p> {{ $item->texto }} </p>
 					</div>
 				</div> <!-- /timeline-block -->
 
