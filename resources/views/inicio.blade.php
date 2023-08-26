@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="es"> <!--<![endif]-->
 <head>
 
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Kards</title>
+	<title>Luis Ollave</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -20,7 +20,7 @@
    <link rel="stylesheet" href="{{ asset('assets/css/base.css') }}">  
    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
    <link rel="stylesheet" href="{{ asset('assets/css/vendor.css') }}">     
-		
+   <link rel="stylesheet" href="{{ asset('assets/css/tao.css') }}">     
    <!-- script
    ================================================== -->   
 	<script src="{{ asset('assets/js/modernizr.js') }}"></script>
@@ -29,6 +29,7 @@
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="{{ asset('assets/favicon.png') }}">
+	{{-- * notiffcaciones --}}
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
 	@livewireStyles
@@ -293,7 +294,7 @@
    			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
    		</div>   		
-   	</div> <!-- /section-intro--> 
+   	</div> <!-- /section-innt-layout.jpgtro--> 
 
    	<div class="row portfolio-content">
 
@@ -304,13 +305,13 @@
 
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="{{ asset('assets/images/portfolio/liberty.jpg') }}" alt="Liberty">
+	               	<img src="{{ asset('assets/images/portfolio/nt-layout.jpg') }}" alt="neumatruck.cl">
 	                  <a href="#modal-01" class="overlay">	                  	           
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Liberty</h3>	     					    
+		     					       <h3 class="folio-title">Neumatruck.cl</h3>	     					    
 		     					    	 <span class="folio-types">
-		     					       	  Graphic Design
+		     					       	  web
 		     					       </span>
 		     					   </div>	                      	
 	                     </div>                    
@@ -541,17 +542,17 @@
 
    		<div class="col-twelve section-ads">  
 
-	     		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+	     		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Tre comiendo.</a></h2>
 
 		      <p class="lead">
-		      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-				Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
+		      Te puedo asesorar servicios <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>Contrato de servicios o Fijos</span></a>.
+				Contactame <span>y Veamos</span> Como te puedo ayudar<span></span>. 
 				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
 				</p>
 
-				<div class="action">
+				{{-- <div class="action">
 			      <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-		      </div>		     	
+		      </div>		     	 --}}
 
    		</div>
 
@@ -569,10 +570,10 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Services</h5>
-   			<h1>What Can I Do For You?</h1>
+   			<h5>Servicios</h5>
+   			<h1>Que puedo hacer por ti?</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			{{-- <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> --}}
 
    		</div>   		
    	</div> <!-- /section-intro -->
@@ -584,92 +585,35 @@
 	      	<div class="service">	
 
 	      		<span class="icon"><i class="icon-earth"></i></span>            
-
 	            <div class="service-content">	
-
 	            	 <h3>Webdesign</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+		            <p class="desc">
+						Como diseñador web con varios años de experiencia, me especializo en crear y mejorar sitios web estéticamente atractivos y altamente funcionales. Tengo un profundo conocimiento de las últimas tendencias y tecnologías en diseño web, incluyendo HTML5, CSS3, JavaScript, y las mejores prácticas de UX/UI. Mi enfoque estratégico y mi pasión por el diseño detallado y la experiencia del usuario me permiten construir soluciones web personalizadas que satisfacen las necesidades de los clientes y proporcionan experiencias de usuario excepcionales.
 	         		</p>
-	         		
 	         	</div> 	         	 
-
 				</div> <!-- /service -->
 
 				<div class="service">	
-
-					<span class="icon"><i class="icon-window"></i></span>                          
-
+				<span class="icon"><i class="icon-window"></i></span>                          
 	            <div class="service-content">	
-
 	            	<h3>Web Development</h3>  
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+		            <p class="desc">
+						Como desarrollador web experimentado, me especializo en construir y optimizar sitios web completos y aplicaciones web interactivas utilizando una variedad de lenguajes de programación y tecnologías, incluyendo PHP, Python y Laravel. Mi sólido conocimiento en desarrollo front-end y back-end, junto con mi habilidad para pensar críticamente y resolver problemas, me permite crear soluciones web robustas, eficientes y escalables que cumplen con los requisitos de los proyectos y mejoran la experiencia del usuario.
 	         		</p>
-
 	            </div>	                          
 
 			   </div> <!-- /service -->
 
 			   <div class="service">
-
-			   	<span class="icon"><i class="icon-paint-brush"></i></span>		            
-
+			   	<span class="icon"><i class="icon-mobile"></i></span>		            
 	            <div class="service-content">
-
-	            	<h3>Branding</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-
+	            	<h3>Mobil Development</h3>
+		            <p class="desc">
+						Como desarrollador de aplicaciones móviles, poseo un sólido conocimiento en Flutter y Dart, con experiencia en la creación de aplicaciones eficientes para iOS y Android. Me especializo en el desarrollo de soluciones móviles de alto rendimiento, con un fuerte enfoque en la calidad del código y la experiencia del usuario, trabajando efectivamente en entornos de equipo ágiles y resolviendo problemas complejos.
+	        		</p> 
 	            </div> 	            	               
 
-			   </div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-toggles"></i></span>	              
-
-	            <div class="service-content">
-
-	            	<h3>UI/UX Design</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         		</p> 
-	         		
-	            </div>                
-
-				</div> <!-- /service -->
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="icon-image"></i></span>	            
-
-	            <div class="service-content">
-
-	            	<h3>Graphics Design</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-
-	            </div>	               
-
-			   </div> <!-- /service -->
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
-
-	            <div class="service-content">
-
-	            	 <h3>Consultancy</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-	        			
-	            </div>	               
-
-			   </div> <!-- /service -->
+			</div> <!-- /service -->
 
 	      </div> <!-- /services-list -->
    		
@@ -694,11 +638,11 @@
 						</div>
 
 						<h3 class="stat-count">
-							1500
+							700
 						</h3>
 
 						<h5 class="stat-title">
-							Projects Completed
+							Proyectos Terminados
 						</h5>
 
 					</div> <!-- /stat -->					
@@ -710,16 +654,16 @@
 						</div>
 
 						<h3 class="stat-count">
-							900
+							300
 						</h3>
 
 						<h5 class="stat-title">
-							Happy Clients
+							Clientes Felices
 						</h5>
 
 					</div> <!-- /stat -->
 
-					<div class="bgrid stat">
+					{{-- <div class="bgrid stat">
 
 						<div class="icon-part">
 							<i class="icon-badge"></i>
@@ -733,7 +677,7 @@
 							Awards Received
 						</h5>
 
-					</div> <!-- /stat -->									
+					</div> <!-- /stat -->									 --}}
 
 					<div class="bgrid stat">
 
@@ -742,11 +686,11 @@
 						</div>
 
 						<h3 class="stat-count">
-							120
+							25
 						</h3>
 
 						<h5 class="stat-title">
-							Crazy Ideas
+							Ideas Locas
 						</h5>
 
 					</div> <!-- /stat -->
@@ -762,7 +706,7 @@
 						</h3>
 
 						<h5 class="stat-title">
-							Coffee Cups
+							Tazas de café
 						</h5>
 
 					</div> <!-- /stat -->
@@ -778,7 +722,7 @@
 						</h3>
 
 						<h5 class="stat-title">
-							Hours
+							Horas
 						</h5>
 
 					</div> <!-- /stat -->
